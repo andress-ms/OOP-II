@@ -27,5 +27,14 @@ public class OperationController {
         return result;
     }
 
+    @PostMapping("/getIVA")
+    public Map<String, Double> getIVA(@RequestBody Map<String, Double> request){
+        Map<String, Double> result = new HashMap<>();
+            double price = request.get("price");
+            double iva = price * 0.15;
+            result.put("iva", iva);
+            return result;
+    }
+
 
 }
