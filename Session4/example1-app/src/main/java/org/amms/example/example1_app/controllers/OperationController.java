@@ -14,7 +14,7 @@ public class OperationController {
     @GetMapping("/hola")
     public Map<String, String>holaMundo(){
         Map<String, String> json = new HashMap<>();
-        json.put("mensaje", "Hola mundo");
+        json.put("mensaje", "Hola mundo1");
         return json;
     }
 
